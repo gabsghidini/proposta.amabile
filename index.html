@@ -106,82 +106,76 @@
   <div class="fixed top-[45%] right-[-10vw] w-[45vw] h-[45vw] bg-gold-600/4 rounded-full blur-[160px] pointer-events-none z-0"></div>
   <div class="fixed bottom-0 left-[-10vw] w-[50vw] h-[400px] bg-gold-700/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
 
-  <!-- FLOATING NAVIGATION ISLAND (FULLY RESPONSIVE) -->
-  <header class="fixed top-3 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-3 sm:px-6">
-    <nav class="bg-onyx/90 backdrop-blur-2xl border border-gold-400/25 px-4 sm:px-6 py-2.5 rounded-full flex items-center justify-between gap-4 shadow-2xl shadow-black/95 max-w-5xl w-full relative z-50">
+  <!-- TOP FIXED HEADER & NAVBAR -->
+  <header class="sticky top-0 z-50 w-full bg-obsidian/95 backdrop-blur-xl border-b border-gold-400/20 px-4 sm:px-8 py-3.5 shadow-2xl shadow-black/80">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
       
-      <!-- Logo / Name -->
-      <a href="#" class="flex items-center gap-2.5 shrink-0 group">
-        <div class="w-8 h-8 rounded-full border border-gold-400/40 bg-gradient-to-br from-gold-400/20 to-transparent flex items-center justify-center group-hover:border-gold-300 transition-colors">
-          <span class="font-serif text-gold-300 font-bold text-sm">AN</span>
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="flex items-center gap-3 group shrink-0">
+        <div class="w-9 h-9 rounded-full border border-gold-400/50 bg-gradient-to-br from-gold-400/20 to-transparent flex items-center justify-center shadow-inner group-hover:border-gold-300 transition-colors">
+          <span class="font-serif text-gold-300 font-bold text-base">AN</span>
         </div>
         <div>
-          <span class="text-xs font-semibold tracking-wider text-white uppercase block leading-none">Dra. Amábile Nascimento</span>
-          <span class="text-[9px] text-gold-400 font-mono tracking-widest uppercase">Planejamento Executivo</span>
+          <span class="text-xs sm:text-sm font-semibold tracking-wider text-white uppercase block leading-none">Dra. Amábile Nascimento</span>
+          <span class="text-[9px] sm:text-[10px] text-gold-400 font-mono tracking-widest uppercase">Advocacia & Consultoria</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <div class="hidden xl:flex items-center gap-5 text-[11px] uppercase tracking-wider font-medium text-zinc-400">
-        <a href="#diagnostico" class="hover:text-gold-300 transition-colors">Diagnóstico</a>
-        <a href="#parceria" class="hover:text-gold-300 transition-colors">A Parceria</a>
-        <a href="#frentes" class="hover:text-gold-300 transition-colors">Os 2 Perfis</a>
-        <a href="#comercial" class="hover:text-gold-300 transition-colors">CRM & Triagem</a>
-        <a href="#roi" class="hover:text-gold-300 transition-colors">Matemática ROI</a>
-        <a href="#investimento" class="hover:text-gold-300 transition-colors">Investimento</a>
-      </div>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-6 text-xs uppercase tracking-wider font-medium text-zinc-300">
+        <a href="#diagnostico" class="hover:text-gold-300 transition-colors py-1">Diagnóstico</a>
+        <a href="#parceria" class="hover:text-gold-300 transition-colors py-1">A Parceria</a>
+        <a href="#frentes" class="hover:text-gold-300 transition-colors py-1">Os 2 Perfis</a>
+        <a href="#comercial" class="hover:text-gold-300 transition-colors py-1">CRM & Triagem</a>
+        <a href="#roi" class="hover:text-gold-300 transition-colors py-1">Matemática ROI</a>
+        <a href="#investimento" class="hover:text-gold-300 transition-colors py-1">Investimento</a>
+      </nav>
 
-      <!-- Action Buttons Desktop & Mobile Toggle -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <!-- PDF Download Button -->
-        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700/80 text-[10px] uppercase font-mono font-medium text-zinc-300 hover:text-gold-300 hover:border-gold-400/40 transition-colors">
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-3">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-gold-400/30 text-[10px] uppercase font-mono font-medium text-zinc-200 hover:text-gold-300 hover:border-gold-300 transition-colors">
           <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           <span>Baixar PDF</span>
         </a>
 
-        <!-- WhatsApp CTA -->
-        <a href="#investimento" class="group relative inline-flex items-center gap-2 pl-3.5 pr-1.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500/25 to-gold-400/10 border border-gold-400/40 hover:border-gold-300 transition-all duration-300">
+        <a href="#investimento" class="inline-flex items-center gap-2 pl-4 pr-1.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500/25 to-gold-400/10 border border-gold-400/40 hover:border-gold-300 transition-all duration-300">
           <span class="text-[11px] font-semibold tracking-wider uppercase text-gold-200">Aprovar Proposta</span>
-          <span class="w-6 h-6 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs group-hover:translate-x-0.5 transition-transform duration-300">
+          <span class="w-6 h-6 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs">
             →
           </span>
         </a>
 
-        <!-- Mobile Hamburger Button -->
-        <button id="mobile-menu-btn" aria-label="Abrir Menu" class="xl:hidden w-8 h-8 rounded-full border border-gold-400/30 bg-zinc-900/90 flex flex-col items-center justify-center gap-1 text-gold-300 hover:border-gold-300 transition-colors">
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-btn" aria-label="Abrir Menu" class="xl:hidden w-8 h-8 rounded-full border border-gold-400/40 bg-zinc-900 flex flex-col items-center justify-center gap-1 text-gold-300 hover:border-gold-300 transition-colors">
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
         </button>
       </div>
 
-    </nav>
+    </div>
 
     <!-- Mobile Drawer Dropdown -->
-    <div id="mobile-menu" class="hidden xl:hidden w-full max-w-5xl mt-2 bg-onyx/95 backdrop-blur-2xl border border-gold-400/25 rounded-3xl p-5 shadow-2xl transition-all duration-300 z-40">
-      <div class="flex flex-col gap-3 text-xs uppercase tracking-wider font-medium text-zinc-300 border-b border-zinc-800 pb-4">
-        <a href="#diagnostico" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">01. Diagnóstico</a>
-        <a href="#parceria" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">02. A Parceria</a>
-        <a href="#frentes" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">03. Os 2 Perfis</a>
-        <a href="#comercial" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">04. CRM & Triagem WhatsApp</a>
-        <a href="#roi" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">05. Matemática de ROI</a>
-        <a href="#investimento" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">06. Investimento & Condições</a>
+    <div id="mobile-menu" class="hidden xl:hidden max-w-7xl mx-auto mt-3 bg-charcoal/95 border border-gold-400/25 rounded-2xl p-4 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-2.5 text-xs uppercase tracking-wider font-medium text-zinc-300 border-b border-zinc-800 pb-3">
+        <a href="#diagnostico" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">01. Diagnóstico</a>
+        <a href="#parceria" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">02. A Parceria</a>
+        <a href="#frentes" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">03. Os 2 Perfis</a>
+        <a href="#comercial" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">04. CRM & Triagem WhatsApp</a>
+        <a href="#roi" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">05. Matemática de ROI</a>
+        <a href="#investimento" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">06. Investimento & Condições</a>
       </div>
-      
-      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-zinc-200">
+      <div class="pt-3 flex flex-col gap-2">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-zinc-200">
           <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           Baixar Proposta em PDF
-        </a>
-        <a href="#investimento" class="mobile-link w-full sm:w-auto text-center py-2.5 px-5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-obsidian font-bold text-xs uppercase tracking-wider">
-          Ir para Proposta (R$ 2.800/mês)
         </a>
       </div>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 max-w-6xl mx-auto z-10">
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 max-w-6xl mx-auto z-10">
     <div class="text-center space-y-6">
       
       <!-- Eyebrow Tag -->
@@ -202,13 +196,9 @@
         Integrando com precisão a autoridade de conteúdo que você já possui com <strong class="text-gold-300 font-medium">mídia paga de alta performance</strong> e <strong class="text-gold-300 font-medium">triagem comercial ética</strong>.
       </p>
 
-      <!-- CTA Buttons Hero -->
-      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#investimento" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 text-obsidian font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:brightness-110 active:scale-[0.98] transition-all">
-          <span>Ver Proposta Comercial (R$ 2.800/mês)</span>
-          <span class="w-5 h-5 rounded-full bg-obsidian text-gold-300 flex items-center justify-center text-xs">↓</span>
-        </a>
-        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-surface border border-zinc-700/80 text-zinc-300 hover:text-white hover:border-gold-400/40 text-xs font-mono font-medium transition-colors">
+      <!-- CTA Buttons Hero (Only Download PDF) -->
+      <div class="pt-4 flex items-center justify-center">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-surface border border-zinc-700/80 text-zinc-300 hover:text-white hover:border-gold-400/40 text-xs font-mono font-medium transition-colors shadow-lg shadow-black/60">
           <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           <span>Baixar Versão Oficial em PDF</span>
         </a>
@@ -231,7 +221,7 @@
   </section>
 
   <!-- 1. DIAGNÓSTICO & OPORTUNIDADE -->
-  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="diagnostico">
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="diagnostico">
     <div class="bezel-outer p-1.5 rounded-3xl">
       <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-6">
         
@@ -278,7 +268,7 @@
   </section>
 
   <!-- 2. A ENGRENAGEM DA PARCERIA -->
-  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="parceria">
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="parceria">
     <div class="text-center mb-12 space-y-2">
       <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Divisão de Papéis</span>
       <h2 class="text-2xl md:text-4xl font-serif text-white">Como Trabalhamos em Perfeita Harmonia</h2>
@@ -369,7 +359,7 @@
   </section>
 
   <!-- 3. OS DOIS PERFIS DETALHADOS -->
-  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="frentes">
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="frentes">
     <div class="text-center mb-12 space-y-2">
       <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Estratégia de Campanhas</span>
       <h2 class="text-2xl md:text-4xl font-serif text-white">Detalhamento Operacional dos 2 Perfis</h2>
@@ -476,7 +466,7 @@
   </section>
 
   <!-- 4. ESTRUTURAÇÃO COMERCIAL & SCRIPTS PRONTOS -->
-  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="comercial">
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="comercial">
     <div class="text-center mb-12 space-y-2">
       <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Estruturação Comercial Apex</span>
       <h2 class="text-2xl md:text-4xl font-serif text-white">Como Funciona a Triagem Ética no WhatsApp</h2>
@@ -547,7 +537,7 @@
   </section>
 
   <!-- 5. MATEMÁTICA DE ROI E VIABILIDADE -->
-  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="roi">
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="roi">
     <div class="bezel-outer p-2 rounded-3xl bg-gradient-to-b from-gold-950/20 via-charcoal to-black border-gold-400/30">
       <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-8">
         
@@ -596,7 +586,7 @@
   </section>
 
   <!-- 6. PROPOSTA COMERCIAL & INVESTIMENTO -->
-  <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="investimento">
+  <section class="py-20 px-4 max-w-4xl mx-auto relative z-10 scroll-mt-20" id="investimento">
     <div class="text-center mb-12 space-y-2">
       <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Contratação & Escopo</span>
       <h2 class="text-3xl md:text-5xl font-serif text-white">Proposta Comercial Integrada</h2>
