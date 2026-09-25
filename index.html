@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Estratégico Executivo & Proposta Comercial | Dra. Amábile Nascimento & Grupo APEX</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Cormorant Garamond & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#060607',
+            onyx: '#0B0B0D',
+            charcoal: '#121215',
+            surface: '#18181D',
+            gold: {
+              50: '#FDFBF7',
+              100: '#FAF2DE',
+              200: '#F4E3B5',
+              300: '#E7CE7F',
+              400: '#D4AF37',
+              500: '#C5A059',
+              600: '#A37E36',
+              700: '#7E5F26',
+              800: '#533D17',
+              900: '#2E210A',
+              950: '#191104'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 40px -5px rgba(212, 175, 55, 0.25)',
+            'gold-ambient': '0 25px 60px -15px rgba(197, 160, 89, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #060607;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2E210A;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #A37E36;
+    }
+
+    /* Metallic Gold Text Gradient */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF8E7 0%, #E7CE7F 35%, #D4AF37 60%, #AA7C11 85%, #F4E3B5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Double Bezel Macro Utilities */
+    .bezel-outer {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 25px -8px rgba(212, 175, 55, 0.04);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bezel-outer:hover {
+      border-color: rgba(212, 175, 55, 0.35);
+      box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.95), 0 0 35px -5px rgba(212, 175, 55, 0.12);
+    }
+    .bezel-inner {
+      background: linear-gradient(180deg, #111114 0%, #0A0A0C 100%);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: inset 0 1px 1px rgba(244, 227, 181, 0.12);
+    }
+
+    /* Code & Script Box */
+    .script-box {
+      background: #070709;
+      border-left: 3px solid #D4AF37;
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-zinc-300 font-sans antialiased selection:bg-gold-500/20 selection:text-gold-200 min-h-screen relative overflow-x-hidden">
+
+  <!-- Ambient Light Orbs -->
+  <div class="fixed top-[-150px] left-1/2 -translate-x-1/2 w-[85vw] h-[450px] bg-gradient-to-b from-gold-500/12 via-gold-700/5 to-transparent rounded-full blur-[140px] pointer-events-none z-0"></div>
+  <div class="fixed top-[45%] right-[-10vw] w-[45vw] h-[45vw] bg-gold-600/4 rounded-full blur-[160px] pointer-events-none z-0"></div>
+  <div class="fixed bottom-0 left-[-10vw] w-[50vw] h-[400px] bg-gold-700/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
+
+  <!-- FLOATING NAVIGATION ISLAND (FULLY RESPONSIVE) -->
+  <header class="fixed top-3 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-3 sm:px-6">
+    <nav class="bg-onyx/90 backdrop-blur-2xl border border-gold-400/25 px-4 sm:px-6 py-2.5 rounded-full flex items-center justify-between gap-4 shadow-2xl shadow-black/95 max-w-5xl w-full relative z-50">
+      
+      <!-- Logo / Name -->
+      <a href="#" class="flex items-center gap-2.5 shrink-0 group">
+        <div class="w-8 h-8 rounded-full border border-gold-400/40 bg-gradient-to-br from-gold-400/20 to-transparent flex items-center justify-center group-hover:border-gold-300 transition-colors">
+          <span class="font-serif text-gold-300 font-bold text-sm">AN</span>
+        </div>
+        <div>
+          <span class="text-xs font-semibold tracking-wider text-white uppercase block leading-none">Dra. Amábile Nascimento</span>
+          <span class="text-[9px] text-gold-400 font-mono tracking-widest uppercase">Planejamento Executivo</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden xl:flex items-center gap-5 text-[11px] uppercase tracking-wider font-medium text-zinc-400">
+        <a href="#diagnostico" class="hover:text-gold-300 transition-colors">Diagnóstico</a>
+        <a href="#parceria" class="hover:text-gold-300 transition-colors">A Parceria</a>
+        <a href="#frentes" class="hover:text-gold-300 transition-colors">Os 2 Perfis</a>
+        <a href="#comercial" class="hover:text-gold-300 transition-colors">CRM & Triagem</a>
+        <a href="#roi" class="hover:text-gold-300 transition-colors">Matemática ROI</a>
+        <a href="#investimento" class="hover:text-gold-300 transition-colors">Investimento</a>
+      </div>
+
+      <!-- Action Buttons Desktop & Mobile Toggle -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- PDF Download Button -->
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-700/80 text-[10px] uppercase font-mono font-medium text-zinc-300 hover:text-gold-300 hover:border-gold-400/40 transition-colors">
+          <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span>Baixar PDF</span>
+        </a>
+
+        <!-- WhatsApp CTA -->
+        <a href="#investimento" class="group relative inline-flex items-center gap-2 pl-3.5 pr-1.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500/25 to-gold-400/10 border border-gold-400/40 hover:border-gold-300 transition-all duration-300">
+          <span class="text-[11px] font-semibold tracking-wider uppercase text-gold-200">Aprovar Proposta</span>
+          <span class="w-6 h-6 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs group-hover:translate-x-0.5 transition-transform duration-300">
+            →
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" aria-label="Abrir Menu" class="xl:hidden w-8 h-8 rounded-full border border-gold-400/30 bg-zinc-900/90 flex flex-col items-center justify-center gap-1 text-gold-300 hover:border-gold-300 transition-colors">
+          <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
+          <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
+          <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
+        </button>
+      </div>
+
+    </nav>
+
+    <!-- Mobile Drawer Dropdown -->
+    <div id="mobile-menu" class="hidden xl:hidden w-full max-w-5xl mt-2 bg-onyx/95 backdrop-blur-2xl border border-gold-400/25 rounded-3xl p-5 shadow-2xl transition-all duration-300 z-40">
+      <div class="flex flex-col gap-3 text-xs uppercase tracking-wider font-medium text-zinc-300 border-b border-zinc-800 pb-4">
+        <a href="#diagnostico" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">01. Diagnóstico</a>
+        <a href="#parceria" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">02. A Parceria</a>
+        <a href="#frentes" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">03. Os 2 Perfis</a>
+        <a href="#comercial" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">04. CRM & Triagem WhatsApp</a>
+        <a href="#roi" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">05. Matemática de ROI</a>
+        <a href="#investimento" class="mobile-link py-2 px-3 rounded-xl hover:bg-gold-500/10 hover:text-gold-300 transition-colors">06. Investimento & Condições</a>
+      </div>
+      
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-zinc-200">
+          <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Baixar Proposta em PDF
+        </a>
+        <a href="#investimento" class="mobile-link w-full sm:w-auto text-center py-2.5 px-5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-obsidian font-bold text-xs uppercase tracking-wider">
+          Ir para Proposta (R$ 2.800/mês)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 max-w-6xl mx-auto z-10">
+    <div class="text-center space-y-6">
+      
+      <!-- Eyebrow Tag -->
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-gold-400/30 bg-gold-950/50 backdrop-blur-md">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+        <span class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-300 font-mono">Documento Executivo de Implementação · Provimento 205/2021 OAB</span>
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-serif font-normal text-white tracking-tight leading-[1.12] max-w-4xl mx-auto">
+        Plano de Aquisição de Clientes, Tráfego Pago & <span class="italic gold-gradient-text">Estruturação Comercial</span>
+      </h1>
+
+      <!-- Executive Overview Subtitle -->
+      <p class="text-sm sm:text-base md:text-lg text-zinc-400 max-w-3xl mx-auto font-light leading-relaxed">
+        Este documento apresenta o desenho operacional completo e autossuficiente para acelerar os resultados do escritório da 
+        <strong class="text-zinc-100 font-medium">Dra. Amábile Nascimento</strong> e do projeto <strong class="text-zinc-100 font-medium">Golpe Tem Volta</strong>. 
+        Integrando com precisão a autoridade de conteúdo que você já possui com <strong class="text-gold-300 font-medium">mídia paga de alta performance</strong> e <strong class="text-gold-300 font-medium">triagem comercial ética</strong>.
+      </p>
+
+      <!-- CTA Buttons Hero -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#investimento" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 text-obsidian font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:brightness-110 active:scale-[0.98] transition-all">
+          <span>Ver Proposta Comercial (R$ 2.800/mês)</span>
+          <span class="w-5 h-5 rounded-full bg-obsidian text-gold-300 flex items-center justify-center text-xs">↓</span>
+        </a>
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-surface border border-zinc-700/80 text-zinc-300 hover:text-white hover:border-gold-400/40 text-xs font-mono font-medium transition-colors">
+          <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          <span>Baixar Versão Oficial em PDF</span>
+        </a>
+      </div>
+
+      <!-- Key Guarantees Pills -->
+      <div class="pt-6 flex flex-wrap items-center justify-center gap-3 text-xs text-zinc-400">
+        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+          <span class="text-gold-400">●</span> 100% em conformidade com o Provimento 205/2021 OAB
+        </span>
+        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+          <span class="text-gold-400">●</span> Zero interferência na sua equipe de Social Media
+        </span>
+        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+          <span class="text-gold-400">●</span> Gestão simultânea dos 2 perfis estratégicos
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 1. DIAGNÓSTICO & OPORTUNIDADE -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="diagnostico">
+    <div class="bezel-outer p-1.5 rounded-3xl">
+      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-6">
+        
+        <div class="flex items-center gap-3 border-b border-zinc-800 pb-4">
+          <span class="text-gold-400 font-mono text-xs uppercase tracking-widest font-semibold">01 · Diagnóstico Estratégico</span>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-serif text-white font-bold">
+          O Desafio Mapeado na Reunião e a Solução Proposta
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+          
+          <div class="bg-black/40 p-6 rounded-2xl border border-red-500/20 space-y-3">
+            <span class="text-xs uppercase font-bold text-red-400 tracking-wider flex items-center gap-1.5">
+              <span>✕</span> O Gargalo Típico da Advocacia Digital
+            </span>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Muitos escritórios produzem conteúdos excelentes nas redes sociais, mas enfrentam duas travas:
+            </p>
+            <ul class="text-xs text-zinc-400 space-y-2 list-disc list-inside">
+              <li>O alcance orgânico do Instagram é limitado a uma fração mínima dos seguidores.</li>
+              <li>Quando o tráfego atrai pessoas para o WhatsApp, o escritório é bombardeado por <em>curiosos sem dinheiro</em>, consumindo o tempo valioso da advogada em orientações gratuitas.</li>
+            </ul>
+          </div>
+
+          <div class="bg-black/40 p-6 rounded-2xl border border-gold-400/30 space-y-3">
+            <span class="text-xs uppercase font-bold text-gold-400 tracking-wider flex items-center gap-1.5">
+              <span>✓</span> A Solução Integrada Grupo APEX
+            </span>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Entramos exatamente nas duas engrenagens que transformam visualizações em contratos assinados:
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 list-disc list-inside">
+              <li><strong class="text-gold-300">Tráfego Pago Cirúrgico:</strong> Colocamos os melhores conteúdos na frente exata de decisores de clubes, atletas e vítimas de golpes com capacidade de ação.</li>
+              <li><strong class="text-gold-300">Filtro Comercial no WhatsApp:</strong> Um processo de triagem ética que qualifica a viabilidade jurídica antes de passar o caso para a Dra. Amábile.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. A ENGRENAGEM DA PARCERIA -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="parceria">
+    <div class="text-center mb-12 space-y-2">
+      <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Divisão de Papéis</span>
+      <h2 class="text-2xl md:text-4xl font-serif text-white">Como Trabalhamos em Perfeita Harmonia</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-xs sm:text-sm">
+        Cada parceiro foca 100% no que faz de melhor. Nós potencializamos o social media existente sem sobrepor nenhuma responsabilidade.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Box Parceira -->
+      <div class="bezel-outer p-1.5 rounded-3xl">
+        <div class="bezel-inner p-8 rounded-[calc(1.5rem-2px)] h-full flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-400 bg-zinc-800/80 px-3 py-1 rounded-full">
+                Sua Parceira de Confiança
+              </span>
+              <span class="text-xs text-zinc-500 font-semibold">Em Andamento</span>
+            </div>
+            
+            <h3 class="text-xl font-serif text-white font-bold mb-2">Social Media & Posicionamento</h3>
+            <p class="text-xs text-zinc-400 mb-6 leading-relaxed">
+              Responsável pela construção contínua de imagem, narrativa e autoridade visual nos dois perfis:
+            </p>
+
+            <div class="space-y-3 text-xs text-zinc-300">
+              <div class="p-3 bg-black/40 rounded-xl border border-zinc-800">
+                <strong class="text-white block mb-0.5">Identidade Visual & Branding</strong>
+                Criação de paleta, tipografia, artes do feed, carrosséis e capas.
+              </div>
+              <div class="p-3 bg-black/40 rounded-xl border border-zinc-800">
+                <strong class="text-white block mb-0.5">Calendário Editorial de Conteúdo</strong>
+                Planejamento de temas, roteiros de Reels e publicações institucionais.
+              </div>
+              <div class="p-3 bg-black/40 rounded-xl border border-zinc-800">
+                <strong class="text-white block mb-0.5">Interação Orgânica & Comunidade</strong>
+                Acompanhamento de comentários e relacionamento no Instagram.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-zinc-800 text-[11px] text-zinc-500 italic">
+            Zero alteração ou interferência no escopo da parceira.
+          </div>
+        </div>
+      </div>
+
+      <!-- Box APEX -->
+      <div class="bezel-outer p-1.5 rounded-3xl border-gold-400/40">
+        <div class="bezel-inner p-8 rounded-[calc(1.5rem-2px)] h-full flex flex-col justify-between bg-gradient-to-b from-charcoal to-obsidian">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-gold-300 bg-gold-950/80 border border-gold-400/30 px-3 py-1 rounded-full font-bold">
+                Grupo APEX
+              </span>
+              <span class="text-xs text-gold-400 font-semibold">Nova Implementação</span>
+            </div>
+            
+            <h3 class="text-xl font-serif text-white font-bold mb-2">Mídia Paga & Estruturação Comercial</h3>
+            <p class="text-xs text-zinc-400 mb-6 leading-relaxed">
+              Responsável pela tração financeira, captação ativa e conversão de atendimentos em honorários:
+            </p>
+
+            <div class="space-y-3 text-xs text-zinc-300">
+              <div class="p-3 bg-black/50 rounded-xl border border-gold-900/40">
+                <strong class="text-gold-200 block mb-0.5">Tráfego Pago de Alta Precisão (2 Perfis)</strong>
+                Configuração técnica, segmentação de públicos e veiculação de anúncios na Meta e Google.
+              </div>
+              <div class="p-3 bg-black/50 rounded-xl border border-gold-900/40">
+                <strong class="text-gold-200 block mb-0.5">Setup de CRM & Esteiras de Atendimento</strong>
+                Organização dos leads em pipelines claras (Desportivo vs. Golpe Bancário).
+              </div>
+              <div class="p-3 bg-black/50 rounded-xl border border-gold-900/40">
+                <strong class="text-gold-200 block mb-0.5">Scripts de Triagem Ética no WhatsApp</strong>
+                Filtro rápido para separar quem tem viabilidade antes de consumir a sua agenda.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gold-900/40 text-[11px] text-gold-400 font-medium">
+            Resultado: A mídia amplifica o social media e o comercial fecha a conta.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. OS DOIS PERFIS DETALHADOS -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="frentes">
+    <div class="text-center mb-12 space-y-2">
+      <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Estratégia de Campanhas</span>
+      <h2 class="text-2xl md:text-4xl font-serif text-white">Detalhamento Operacional dos 2 Perfis</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-xs sm:text-sm">
+        Tratamento cirúrgico e individualizado para cada modelo de público e tipo de contrato.
+      </p>
+    </div>
+
+    <!-- PROFILE 1 -->
+    <div class="bezel-outer p-2 rounded-3xl mb-8">
+      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-950/60 border border-gold-400/30 text-[10px] uppercase font-bold text-gold-300 font-mono mb-2">
+              Perfil 1 · Direito Empresarial & Desportivo
+            </div>
+            <h3 class="text-2xl md:text-3xl font-serif text-white font-bold">@draamabilenascimento</h3>
+            <p class="text-xs text-zinc-400 mt-1">Público de Elite: Clubes, Sociedades Anônimas do Futebol (SAFs), Atletas de Alto Rendimento e Agentes</p>
+          </div>
+          <div class="text-left sm:text-right">
+            <span class="text-[10px] text-zinc-500 uppercase tracking-wider block font-mono">Ticket Médio Esperado</span>
+            <span class="text-xl font-serif text-gold-300 font-bold">R$ 3.000 a R$ 15.000+</span>
+            <span class="text-[10px] text-zinc-400 block">Contratos mensais e consultorias</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">1. Como Rodaremos o Tráfego</span>
+            <ul class="text-zinc-300 space-y-2">
+              <li>• <strong>Google Ads (Rede de Pesquisa):</strong> Anúncios direcionados para quem busca termos específicos (ex: <em>assessoria jurídica para clubes, constituição de SAF, contrato de intermediação de atletas</em>).</li>
+              <li>• <strong>Meta Ads (Distribuição de Autoridade):</strong> Impulsionamento dos conteúdos técnicos da parceira para perfis de gestores esportivos, advogados e atletas.</li>
+            </ul>
+          </div>
+
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">2. A Regra Ética da OAB</span>
+            <p class="text-zinc-300 leading-relaxed">
+              O Provimento 205/2021 veda mercantilização. Por isso, as peças são <strong>educativas e institucionais</strong>. O tom demonstra domínio técnico de governança, conformidade regulatória e compliance desportivo, gerando atração espontânea de decisores.
+            </p>
+          </div>
+
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">3. Rota de Atendimento</span>
+            <p class="text-zinc-300 leading-relaxed">
+              O tomador de decisão clica no anúncio e chega ao WhatsApp com mensagem estruturada. A triagem identifica o porte do clube/atleta e já reserva espaço na agenda da Dra. Amábile para reunião consultiva formal.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PROFILE 2 -->
+    <div class="bezel-outer p-2 rounded-3xl">
+      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-950/60 border border-gold-400/30 text-[10px] uppercase font-bold text-gold-300 font-mono mb-2">
+              Perfil 2 · Direito Bancário & Fraudes Digitais
+            </div>
+            <h3 class="text-2xl md:text-3xl font-serif text-white font-bold">@golpetemvolta</h3>
+            <p class="text-xs text-zinc-400 mt-1">Público de Alta Escala: Vítimas de Fraudes Bancárias, Golpe do Pix, Falsos Leilões e Clonagem</p>
+          </div>
+          <div class="text-left sm:text-right">
+            <span class="text-[10px] text-zinc-500 uppercase tracking-wider block font-mono">Modelo de Rentabilização</span>
+            <span class="text-xl font-serif text-gold-300 font-bold">Taxa Inicial + Êxito</span>
+            <span class="text-[10px] text-zinc-400 block">R$ 1.500 a R$ 3.000 + 20-30%</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">1. Como Rodaremos o Tráfego</span>
+            <ul class="text-zinc-300 space-y-2">
+              <li>• <strong>Meta Ads em Alta Escala:</strong> Anúncios em Reels com ganchos informativos fortes (ex: <em>"Caiu em golpe do Pix? Conheça os prazos da Resolução 147 do Banco Central para bloqueio cautelar"</em>).</li>
+              <li>• Campanhas focadas em direcionamento imediato para triagem de caso no WhatsApp.</li>
+            </ul>
+          </div>
+
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">2. O Filtro Anti-Curiosos</span>
+            <p class="text-zinc-300 leading-relaxed">
+              O maior perigo em direito bancário é atender pessoas que perderam R$ 50 ou que não possuem boletim de ocorrência nem comprovante. Nosso script faz a <strong>qualificação financeira prévia</strong> antes de qualquer atendimento humano.
+            </p>
+          </div>
+
+          <div class="p-5 bg-black/40 rounded-2xl border border-zinc-800">
+            <span class="text-gold-400 font-semibold uppercase tracking-wider text-[11px] block mb-2 font-mono">3. Rota de Atendimento</span>
+            <p class="text-zinc-300 leading-relaxed">
+              Lead preenche os 3 dados-chave no WhatsApp (Valor perdido, Data do golpe e Banco). Se o caso for viável (ex: acima de R$ 5.000 com falha de segurança bancária evidente), avança para proposta de honorários imediata.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ESTRUTURAÇÃO COMERCIAL & SCRIPTS PRONTOS -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="comercial">
+    <div class="text-center mb-12 space-y-2">
+      <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Estruturação Comercial Apex</span>
+      <h2 class="text-2xl md:text-4xl font-serif text-white">Como Funciona a Triagem Ética no WhatsApp</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-xs sm:text-sm">
+        Para respeitar rigorosamente o Provimento 205/2021 da OAB e não escravizar o seu tempo pessoal, implementamos o fluxo em 3 etapas.
+      </p>
+    </div>
+
+    <!-- The 3 Steps Diagram -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      
+      <div class="bezel-outer p-1.5 rounded-3xl">
+        <div class="bezel-inner p-6 rounded-[calc(1.5rem-2px)] h-full space-y-4">
+          <div class="w-8 h-8 rounded-full bg-gold-950 border border-gold-400/40 text-gold-300 flex items-center justify-center font-bold text-xs font-mono">
+            01
+          </div>
+          <h4 class="text-lg font-serif text-white font-bold">1. Recepção Automática</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Mensagem instantânea de acolhimento ético que coleta os dados iniciais sem caracterizar consulta jurídica automática (expressamente vedada pela OAB).
+          </p>
+        </div>
+      </div>
+
+      <div class="bezel-outer p-1.5 rounded-3xl">
+        <div class="bezel-inner p-6 rounded-[calc(1.5rem-2px)] h-full space-y-4">
+          <div class="w-8 h-8 rounded-full bg-gold-950 border border-gold-400/40 text-gold-300 flex items-center justify-center font-bold text-xs font-mono">
+            02
+          </div>
+          <h4 class="text-lg font-serif text-white font-bold">2. Triagem de Viabilidade</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            O CRM organiza as conversas. Casos sem documentação ou com prejuízo irrisório recebem direcionamento informativo sem sobrecarregar sua equipe.
+          </p>
+        </div>
+      </div>
+
+      <div class="bezel-outer p-1.5 rounded-3xl border-gold-400/40">
+        <div class="bezel-inner p-6 rounded-[calc(1.5rem-2px)] h-full space-y-4 bg-gradient-to-b from-charcoal to-obsidian">
+          <div class="w-8 h-8 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs font-mono">
+            03
+          </div>
+          <h4 class="text-lg font-serif text-white font-bold">3. Fechamento Humano</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            A Dra. Amábile ou atendente especializada assume apenas os casos 100% qualificados para formalizar o contrato de prestação de serviços e procuração.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SCRIPT REAL EXAMPLE -->
+    <div class="bezel-outer p-2 rounded-3xl border-gold-400/30">
+      <div class="bezel-inner p-8 rounded-[calc(1.5rem-2px)] space-y-4">
+        <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+          <span class="text-xs uppercase font-mono font-semibold text-gold-400">Exemplo Prático · Script de Triagem para Golpe Tem Volta</span>
+          <span class="text-[10px] text-zinc-500 font-mono">WhatsApp Business</span>
+        </div>
+
+        <div class="script-box p-4 rounded-xl text-xs text-zinc-300 font-mono space-y-2">
+          <p class="text-gold-200">"Olá! Aqui é da equipe jurídica do projeto Golpe Tem Volta (Dra. Amábile Nascimento Advocacia)."</p>
+          <p>"Para entendermos se o seu caso tem viabilidade técnica de recuperação perante as instituições financeiras, por favor nos responda resumidamente:</p>
+          <p>1️⃣ Qual foi o valor aproximado do prejuízo?<br>
+             2️⃣ Há quantos dias o fato aconteceu?<br>
+             3️⃣ Você já registrou Boletim de Ocorrência e notificou o banco de origem?"</p>
+          <p class="text-zinc-500">// O lead responde. O sistema direciona os casos qualificados para a esteira 'Prioridade' no CRM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MATEMÁTICA DE ROI E VIABILIDADE -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10" id="roi">
+    <div class="bezel-outer p-2 rounded-3xl bg-gradient-to-b from-gold-950/20 via-charcoal to-black border-gold-400/30">
+      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-8">
+        
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Matemática Financeira</span>
+          <h2 class="text-2xl md:text-4xl font-serif text-white">Por Que Esta Operação se Paga com Folga</h2>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Ao contrário de empresas de produto físico com margens baixas, o modelo de advocacia possui altíssima margem de contribuição.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+          
+          <div class="p-6 bg-black/60 rounded-2xl border border-zinc-800 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono uppercase font-bold text-gold-400">Esteira Desportivo / SAF</span>
+              <span class="text-xs text-zinc-500">Cenário Conservador</span>
+            </div>
+            <div class="text-2xl font-serif text-white font-bold">1 Único Contrato Fechado</div>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Um contrato de assessoria contínua para um clube, SAF ou empresário esportivo gira entre <strong>R$ 3.500 a R$ 8.000/mês</strong>. 
+            </p>
+            <div class="p-3 bg-zinc-900/80 rounded-xl text-xs text-emerald-400 font-medium">
+              💡 Fechando apenas 1 cliente desportivo a cada 3 meses, o investimento mensal de R$ 2.800 já se paga com lucro líquido.
+            </div>
+          </div>
+
+          <div class="p-6 bg-black/60 rounded-2xl border border-zinc-800 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono uppercase font-bold text-gold-400">Esteira Golpe Tem Volta</span>
+              <span class="text-xs text-zinc-500">Volume Recorrente</span>
+            </div>
+            <div class="text-2xl font-serif text-white font-bold">2 a 3 Ações por Mês</div>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Com taxa inicial de contratação (ex: R$ 1.500) ou êxito sobre valores recuperados, 2 novos casos mensais geram de <strong>R$ 3.000 a R$ 6.000</strong> de receita direta imediata.
+            </p>
+            <div class="p-3 bg-zinc-900/80 rounded-xl text-xs text-emerald-400 font-medium">
+              💡 A esteira rápida de fraudes sustenta o fluxo de caixa enquanto os contratos maiores maturam.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PROPOSTA COMERCIAL & INVESTIMENTO -->
+  <section class="py-20 px-4 max-w-4xl mx-auto relative z-10" id="investimento">
+    <div class="text-center mb-12 space-y-2">
+      <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Contratação & Escopo</span>
+      <h2 class="text-3xl md:text-5xl font-serif text-white">Proposta Comercial Integrada</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-xs sm:text-sm">
+        Uma contratação única e transparente que cobre a gestão completa de tráfego dos 2 perfis e o suporte comercial.
+      </p>
+    </div>
+
+    <!-- MAIN PROPOSAL CARD -->
+    <div class="bezel-outer p-2 rounded-3xl border-gold-400/50">
+      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] bg-gradient-to-b from-charcoal via-obsidian to-black space-y-8">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-8 border-b border-zinc-800 gap-6">
+          <div>
+            <span class="text-[10px] font-mono uppercase tracking-widest font-bold text-gold-400 block mb-1">Escopo Unificado · Grupo APEX</span>
+            <h3 class="text-2xl md:text-3xl font-serif text-white font-bold">Tráfego Pago (2 Perfis) + Estruturação Comercial</h3>
+            <p class="text-xs text-zinc-400 mt-1">Dra. Amábile Nascimento (Desportivo/Empresarial) & Golpe Tem Volta</p>
+          </div>
+          <div class="text-left md:text-right">
+            <span class="text-[11px] text-zinc-500 uppercase tracking-wider block font-mono font-medium">Investimento Mensal</span>
+            <div class="text-3xl md:text-4xl font-serif text-white font-bold gold-gradient-text">R$ 2.800<span class="text-base text-zinc-400 font-sans font-normal">/mês</span></div>
+            <span class="text-[10px] text-gold-400/80 block mt-1 font-mono">Taxa de Setup Comercial 100% Inclusa</span>
+          </div>
+        </div>
+
+        <!-- Scope Checklist Detailed -->
+        <div class="space-y-4">
+          <h4 class="text-xs uppercase tracking-widest text-zinc-400 font-mono font-semibold">Tudo o que está incluído na nossa entrega:</h4>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-zinc-300">
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Tráfego Perfil Dra. Amábile:</strong> Gestão e otimização contínua de campanhas na Meta Ads e Google Ads (Rede de Pesquisa).</span>
+            </div>
+
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Tráfego Golpe Tem Volta:</strong> Campanhas em escala no Meta Ads para captação direta no WhatsApp.</span>
+            </div>
+
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Implementação do CRM:</strong> Parametrização em 2 esteiras distintas para controle total dos contatos.</span>
+            </div>
+
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Scripts de Triagem OAB:</strong> Roteiros de resposta e qualificação de viabilidade para o WhatsApp da equipe.</span>
+            </div>
+
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Sincronização com Social Media:</strong> Alinhamento com a parceira para impulsionar os criativos certos.</span>
+            </div>
+
+            <div class="flex items-start gap-2.5 p-3 rounded-xl bg-black/40 border border-zinc-800/80">
+              <span class="text-gold-400 font-bold">✓</span>
+              <span><strong>Relatórios Executivos:</strong> Acompanhamento quinzenal de custo por lead, volume de atendimentos e conversões.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rules & Conditions -->
+        <div class="p-4 rounded-2xl bg-black/60 border border-zinc-800 text-[11px] text-zinc-400 space-y-1.5">
+          <p>• <strong>Duração do Contrato:</strong> Período inicial de 3 meses para maturação, testes de público e consolidação dos funis.</p>
+          <p>• <strong>Verba de Anúncios:</strong> O orçamento de mídia (Meta/Google Ads) é pago diretamente pelo escritório às plataformas (recomendação inicial: R$ 1.500 a R$ 2.500/mês distribuídos entre os dois perfis).</p>
+        </div>
+
+        <!-- Final CTA Button -->
+        <div class="pt-6 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="text-xs text-zinc-400 text-center sm:text-left">
+            <span>Pronta para iniciarmos a estruturação?</span>
+            <span class="block text-zinc-200 font-semibold mt-0.5">Basta clicar ao lado para confirmar o início.</span>
+          </div>
+
+          <a href="https://wa.me/5512991000000?text=Ol%C3%A1%20Guilherme!%20Li%20o%20planejamento%20estrat%C3%A9gico%20e%20aprovo%20a%20proposta%20de%20R$%202.800/m%C3%AAs.%20Vamos%20come%C3%A7ar!" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 text-obsidian font-bold text-xs uppercase tracking-wider shadow-gold-glow hover:brightness-110 active:scale-[0.98] transition-all duration-300">
+            <span>Aprovar Proposta no WhatsApp</span>
+            <span class="w-6 h-6 rounded-full bg-obsidian text-gold-300 flex items-center justify-center text-xs">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CRONOGRAMA DE IMPLANTAÇÃO (PRIMEIROS 30 DIAS) -->
+  <section class="py-16 px-4 max-w-5xl mx-auto relative z-10">
+    <div class="bezel-outer p-2 rounded-3xl">
+      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+        
+        <div class="border-b border-zinc-800 pb-4">
+          <span class="text-xs uppercase font-mono font-semibold text-gold-400">Passo a Passo</span>
+          <h3 class="text-2xl font-serif text-white font-bold mt-1">Cronograma de Implementação (Primeiros 30 Dias)</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          
+          <div class="p-4 bg-black/40 rounded-xl border border-zinc-800 space-y-2">
+            <span class="text-gold-400 font-mono font-bold block">Semana 1</span>
+            <strong class="text-white block">Setup & Acessos</strong>
+            <p class="text-zinc-400 leading-relaxed">
+              Liberação de acessos ao Gerenciador de Anúncios e Google Ads. Alinhamento com a parceira de Social Media.
+            </p>
+          </div>
+
+          <div class="p-4 bg-black/40 rounded-xl border border-zinc-800 space-y-2">
+            <span class="text-gold-400 font-mono font-bold block">Semana 2</span>
+            <strong class="text-white block">CRM & Scripts</strong>
+            <p class="text-zinc-400 leading-relaxed">
+              Configuração das 2 esteiras do CRM e entrega dos scripts de triagem ética para a equipe no WhatsApp.
+            </p>
+          </div>
+
+          <div class="p-4 bg-black/40 rounded-xl border border-zinc-800 space-y-2">
+            <span class="text-gold-400 font-mono font-bold block">Semana 3</span>
+            <strong class="text-white block">Subida das Campanhas</strong>
+            <p class="text-zinc-400 leading-relaxed">
+              Início dos anúncios na Meta e Google nos 2 perfis. Início da entrada de contatos no funil de atendimento.
+            </p>
+          </div>
+
+          <div class="p-4 bg-black/40 rounded-xl border border-zinc-800 space-y-2">
+            <span class="text-gold-400 font-mono font-bold block">Semana 4</span>
+            <strong class="text-white block">Otimização & Escala</strong>
+            <p class="text-zinc-400 leading-relaxed">
+              Ajuste de criativos com base nos melhores leads recebidos e reunião de alinhamento quinzenal.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PERGUNTAS FREQUENTES (FAQ) -->
+  <section class="py-16 px-4 max-w-4xl mx-auto relative z-10">
+    <div class="text-center mb-10 space-y-2">
+      <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Dúvidas Frequentes</span>
+      <h2 class="text-2xl md:text-3xl font-serif text-white">Perguntas & Respostas</h2>
+    </div>
+
+    <div class="space-y-4 text-xs">
+      
+      <div class="bezel-outer p-1 rounded-2xl">
+        <div class="bezel-inner p-5 rounded-[calc(1rem-2px)] space-y-2">
+          <strong class="text-white text-sm block">1. A OAB pode aplicar penalidade por causa desses anúncios?</strong>
+          <p class="text-zinc-400 leading-relaxed">
+            Absolutamente não. Todo o planejamento segue estritamente o Provimento 205/2021 do CFOAB. Nossos anúncios utilizam marketing informativo e educativo, vedando promessas de causas ganhas, preços ou apelos mercantilistas.
+          </p>
+        </div>
+      </div>
+
+      <div class="bezel-outer p-1 rounded-2xl">
+        <div class="bezel-inner p-5 rounded-[calc(1rem-2px)] space-y-2">
+          <strong class="text-white text-sm block">2. Quanto devo investir em verba de anúncios nas plataformas?</strong>
+          <p class="text-zinc-400 leading-relaxed">
+            Recomendamos iniciar com uma verba combinada entre R$ 1.500 e R$ 2.500/mês diretamente para a Meta e Google Ads. Esse valor é suficiente para validar públicos e manter os dois perfis com bom volume diário de novos contatos qualificados.
+          </p>
+        </div>
+      </div>
+
+      <div class="bezel-outer p-1 rounded-2xl">
+        <div class="bezel-inner p-5 rounded-[calc(1rem-2px)] space-y-2">
+          <strong class="text-white text-sm block">3. O meu tempo pessoal será consumido atendendo mensagens?</strong>
+          <p class="text-zinc-400 leading-relaxed">
+            Não. A estruturação comercial serve exatamente para filtrar os contatos. Casos sem viabilidade financeira ou jurídica são eliminados na triagem inicial por sua equipe ou atendente, garantindo que você só converse com quem tem potencial real de fechamento.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-900 py-12 px-4 max-w-5xl mx-auto text-center text-xs text-zinc-500">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-serif text-gold-400 font-bold text-base">AN</span>
+        <span>Dra. Amábile Nascimento Advocacia & Grupo APEX</span>
+      </div>
+      <div>
+        <span>Estratégia confidencial sob o Provimento CFOAB 205/2021</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU TOGGLE SCRIPT -->
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+    let isOpen = false;
+
+    function toggleMenu() {
+      isOpen = !isOpen;
+      if (isOpen) {
+        mobileMenu.classList.remove('hidden');
+        hamburgerLines[0].classList.add('rotate-45', 'translate-y-1.5');
+        hamburgerLines[1].classList.add('opacity-0');
+        hamburgerLines[2].classList.add('-rotate-45', '-translate-y-1.5');
+      } else {
+        mobileMenu.classList.add('hidden');
+        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-1.5');
+        hamburgerLines[1].classList.remove('opacity-0');
+        hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-1.5');
+      }
+    }
+
+    mobileBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (isOpen) toggleMenu();
+      });
+    });
+  </script>
+
+</body>
+</html>
