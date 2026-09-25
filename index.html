@@ -52,6 +52,12 @@
   </script>
 
   <style>
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 7px;
@@ -107,17 +113,17 @@
   <div class="fixed bottom-0 left-[-10vw] w-[50vw] h-[400px] bg-gold-700/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
 
   <!-- TOP FIXED HEADER & NAVBAR -->
-  <header class="sticky top-0 z-50 w-full bg-obsidian/95 backdrop-blur-xl border-b border-gold-400/20 px-4 sm:px-8 py-3.5 shadow-2xl shadow-black/80">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+  <header class="sticky top-0 z-50 w-full bg-obsidian/95 backdrop-blur-xl border-b border-gold-400/20 px-3 sm:px-8 py-3 shadow-2xl shadow-black/80">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
       
       <!-- Brand Logo & Identity -->
-      <a href="#" class="flex items-center gap-3 group shrink-0">
-        <div class="w-9 h-9 rounded-full border border-gold-400/50 bg-gradient-to-br from-gold-400/20 to-transparent flex items-center justify-center shadow-inner group-hover:border-gold-300 transition-colors">
-          <span class="font-serif text-gold-300 font-bold text-base">AN</span>
+      <a href="#" class="flex items-center gap-2.5 group shrink-0">
+        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-gold-400/50 bg-gradient-to-br from-gold-400/20 to-transparent flex items-center justify-center shadow-inner group-hover:border-gold-300 transition-colors shrink-0">
+          <span class="font-serif text-gold-300 font-bold text-sm sm:text-base">AN</span>
         </div>
         <div>
           <span class="text-xs sm:text-sm font-semibold tracking-wider text-white uppercase block leading-none">Dra. Amábile Nascimento</span>
-          <span class="text-[9px] sm:text-[10px] text-gold-400 font-mono tracking-widest uppercase">Advocacia & Consultoria</span>
+          <span class="text-[9px] sm:text-[10px] text-gold-400 font-mono tracking-widest uppercase block">Advocacia & Consultoria</span>
         </div>
       </a>
 
@@ -132,21 +138,21 @@
       </nav>
 
       <!-- Right Header Actions -->
-      <div class="flex items-center gap-3">
-        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-gold-400/30 text-[10px] uppercase font-mono font-medium text-zinc-200 hover:text-gold-300 hover:border-gold-300 transition-colors">
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-gold-400/30 text-[10px] uppercase font-mono font-medium text-zinc-200 hover:text-gold-300 hover:border-gold-300 transition-colors">
           <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           <span>Baixar PDF</span>
         </a>
 
-        <a href="#investimento" class="inline-flex items-center gap-2 pl-4 pr-1.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500/25 to-gold-400/10 border border-gold-400/40 hover:border-gold-300 transition-all duration-300">
+        <a href="#investimento" class="hidden sm:inline-flex items-center gap-2 pl-3.5 pr-1.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500/25 to-gold-400/10 border border-gold-400/40 hover:border-gold-300 transition-all duration-300">
           <span class="text-[11px] font-semibold tracking-wider uppercase text-gold-200">Aprovar Proposta</span>
-          <span class="w-6 h-6 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs">
+          <span class="w-5 h-5 rounded-full bg-gold-400 text-obsidian flex items-center justify-center font-bold text-xs">
             →
           </span>
         </a>
 
         <!-- Mobile Hamburger Toggle -->
-        <button id="mobile-menu-btn" aria-label="Abrir Menu" class="xl:hidden w-8 h-8 rounded-full border border-gold-400/40 bg-zinc-900 flex flex-col items-center justify-center gap-1 text-gold-300 hover:border-gold-300 transition-colors">
+        <button id="mobile-menu-btn" aria-label="Abrir Menu" class="xl:hidden w-9 h-9 rounded-full border border-gold-400/40 bg-zinc-900 flex flex-col items-center justify-center gap-1 text-gold-300 hover:border-gold-300 transition-colors shrink-0">
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
           <span class="hamburger-line w-4 h-0.5 bg-gold-300 transition-all duration-300"></span>
@@ -156,8 +162,8 @@
     </div>
 
     <!-- Mobile Drawer Dropdown -->
-    <div id="mobile-menu" class="hidden xl:hidden max-w-7xl mx-auto mt-3 bg-charcoal/95 border border-gold-400/25 rounded-2xl p-4 shadow-2xl transition-all duration-300">
-      <div class="flex flex-col gap-2.5 text-xs uppercase tracking-wider font-medium text-zinc-300 border-b border-zinc-800 pb-3">
+    <div id="mobile-menu" class="hidden xl:hidden max-w-7xl mx-auto mt-3 bg-charcoal/98 border border-gold-400/30 rounded-2xl p-4 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-2 text-xs uppercase tracking-wider font-medium text-zinc-300 border-b border-zinc-800 pb-3">
         <a href="#diagnostico" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">01. Diagnóstico</a>
         <a href="#parceria" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">02. A Parceria</a>
         <a href="#frentes" class="mobile-link py-2 px-3 rounded-lg hover:bg-gold-500/10 hover:text-gold-300 transition-colors">03. Os 2 Perfis</a>
@@ -170,49 +176,52 @@
           <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           Baixar Proposta em PDF
         </a>
+        <a href="#investimento" class="mobile-link w-full text-center py-2.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-obsidian font-bold text-xs uppercase tracking-wider">
+          Aprovar Proposta (R$ 2.800/mês) →
+        </a>
       </div>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 max-w-6xl mx-auto z-10">
-    <div class="text-center space-y-6">
+  <section class="relative pt-10 pb-14 sm:pt-16 sm:pb-20 md:pt-24 md:pb-28 px-3 sm:px-4 max-w-6xl mx-auto z-10 overflow-hidden">
+    <div class="text-center space-y-4 sm:space-y-6 max-w-full">
       
-      <!-- Eyebrow Tag -->
-      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-gold-400/30 bg-gold-950/50 backdrop-blur-md">
-        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
-        <span class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-300 font-mono">Documento Executivo de Implementação · Provimento 205/2021 OAB</span>
+      <!-- Eyebrow Tag (Compact & Mobile Safe) -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-400/30 bg-gold-950/50 backdrop-blur-md max-w-full">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse shrink-0"></span>
+        <span class="text-[9px] sm:text-[11px] uppercase tracking-wider font-semibold text-gold-300 font-mono">Provimento CFOAB 205/2021</span>
       </div>
 
       <!-- Main Title -->
-      <h1 class="text-3xl sm:text-5xl md:text-6xl font-serif font-normal text-white tracking-tight leading-[1.12] max-w-4xl mx-auto">
-        Plano de Aquisição de Clientes, Tráfego Pago & <span class="italic gold-gradient-text">Estruturação Comercial</span>
+      <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight leading-[1.2] sm:leading-[1.12] max-w-4xl mx-auto px-2">
+        Plano de Aquisição de Clientes, Tráfego Pago & <span class="italic gold-gradient-text block sm:inline">Estruturação Comercial</span>
       </h1>
 
       <!-- Executive Overview Subtitle -->
-      <p class="text-sm sm:text-base md:text-lg text-zinc-400 max-w-3xl mx-auto font-light leading-relaxed">
+      <p class="text-xs sm:text-base md:text-lg text-zinc-400 max-w-3xl mx-auto font-light leading-relaxed px-2">
         Este documento apresenta o desenho operacional completo e autossuficiente para acelerar os resultados do escritório da 
         <strong class="text-zinc-100 font-medium">Dra. Amábile Nascimento</strong> e do projeto <strong class="text-zinc-100 font-medium">Golpe Tem Volta</strong>. 
         Integrando com precisão a autoridade de conteúdo que você já possui com <strong class="text-gold-300 font-medium">mídia paga de alta performance</strong> e <strong class="text-gold-300 font-medium">triagem comercial ética</strong>.
       </p>
 
       <!-- CTA Buttons Hero (Only Download PDF) -->
-      <div class="pt-4 flex items-center justify-center">
-        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-surface border border-zinc-700/80 text-zinc-300 hover:text-white hover:border-gold-400/40 text-xs font-mono font-medium transition-colors shadow-lg shadow-black/60">
-          <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      <div class="pt-2 sm:pt-4 flex items-center justify-center px-2">
+        <a href="./Planejamento_Estrategico_Dra_Amabile_Nascimento.pdf" target="_blank" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 rounded-full bg-surface border border-zinc-700/80 text-zinc-300 hover:text-white hover:border-gold-400/40 text-xs font-mono font-medium transition-colors shadow-lg shadow-black/60">
+          <svg class="w-4 h-4 text-gold-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
           <span>Baixar Versão Oficial em PDF</span>
         </a>
       </div>
 
       <!-- Key Guarantees Pills -->
-      <div class="pt-6 flex flex-wrap items-center justify-center gap-3 text-xs text-zinc-400">
-        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+      <div class="pt-4 sm:pt-6 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2 sm:gap-3 text-[10px] sm:text-xs text-zinc-400 px-2">
+        <span class="w-full sm:w-auto text-center px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center justify-center gap-1.5">
           <span class="text-gold-400">●</span> 100% em conformidade com o Provimento 205/2021 OAB
         </span>
-        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+        <span class="w-full sm:w-auto text-center px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center justify-center gap-1.5">
           <span class="text-gold-400">●</span> Zero interferência na sua equipe de Social Media
         </span>
-        <span class="px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center gap-1.5">
+        <span class="w-full sm:w-auto text-center px-3.5 py-1.5 rounded-full bg-surface border border-zinc-800 flex items-center justify-center gap-1.5">
           <span class="text-gold-400">●</span> Gestão simultânea dos 2 perfis estratégicos
         </span>
       </div>
@@ -223,7 +232,7 @@
   <!-- 1. DIAGNÓSTICO & OPORTUNIDADE -->
   <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="diagnostico">
     <div class="bezel-outer p-1.5 rounded-3xl">
-      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-6">
+      <div class="bezel-inner p-5 sm:p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-6">
         
         <div class="flex items-center gap-3 border-b border-zinc-800 pb-4">
           <span class="text-gold-400 font-mono text-xs uppercase tracking-widest font-semibold">01 · Diagnóstico Estratégico</span>
@@ -370,7 +379,7 @@
 
     <!-- PROFILE 1 -->
     <div class="bezel-outer p-2 rounded-3xl mb-8">
-      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+      <div class="bezel-inner p-5 sm:p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-zinc-800 gap-4">
           <div>
@@ -418,7 +427,7 @@
 
     <!-- PROFILE 2 -->
     <div class="bezel-outer p-2 rounded-3xl">
-      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+      <div class="bezel-inner p-5 sm:p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-zinc-800 gap-4">
           <div>
@@ -539,7 +548,7 @@
   <!-- 5. MATEMÁTICA DE ROI E VIABILIDADE -->
   <section class="py-16 px-4 max-w-5xl mx-auto relative z-10 scroll-mt-20" id="roi">
     <div class="bezel-outer p-2 rounded-3xl bg-gradient-to-b from-gold-950/20 via-charcoal to-black border-gold-400/30">
-      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-8">
+      <div class="bezel-inner p-5 sm:p-8 md:p-12 rounded-[calc(1.5rem-2px)] space-y-8">
         
         <div class="text-center space-y-2 max-w-2xl mx-auto">
           <span class="text-xs uppercase tracking-[0.25em] font-semibold text-gold-400 font-mono">Matemática Financeira</span>
@@ -597,7 +606,7 @@
 
     <!-- MAIN PROPOSAL CARD -->
     <div class="bezel-outer p-2 rounded-3xl border-gold-400/50">
-      <div class="bezel-inner p-8 md:p-12 rounded-[calc(1.5rem-2px)] bg-gradient-to-b from-charcoal via-obsidian to-black space-y-8">
+      <div class="bezel-inner p-5 sm:p-8 md:p-12 rounded-[calc(1.5rem-2px)] bg-gradient-to-b from-charcoal via-obsidian to-black space-y-8">
         
         <div class="flex flex-col md:flex-row md:items-center justify-between pb-8 border-b border-zinc-800 gap-6">
           <div>
@@ -675,7 +684,7 @@
   <!-- 7. CRONOGRAMA DE IMPLANTAÇÃO (PRIMEIROS 30 DIAS) -->
   <section class="py-16 px-4 max-w-5xl mx-auto relative z-10">
     <div class="bezel-outer p-2 rounded-3xl">
-      <div class="bezel-inner p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
+      <div class="bezel-inner p-5 sm:p-8 md:p-10 rounded-[calc(1.5rem-2px)] space-y-6">
         
         <div class="border-b border-zinc-800 pb-4">
           <span class="text-xs uppercase font-mono font-semibold text-gold-400">Passo a Passo</span>
